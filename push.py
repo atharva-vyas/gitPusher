@@ -6,7 +6,7 @@ dir = 'gitPusher'
 
 branch = "master"
 
-origin = "https://github.com/elit30/" + str(gitName) +".git"
+origin = "https://github.com/atharva-vyas/" + str(gitName) +".git"
 os.chdir(os.getcwd() + "/" + dir)
 
 os.system('git init')
