@@ -1,8 +1,8 @@
 import os
 import time
 
-gitName = "gitPusher"
-dir = 'gitPusher'
+gitName = "temporaryRepo"
+dir = ''
 
 branch = "master"
 
