@@ -2,7 +2,7 @@ import os
 import time
 
 gitName = "temporaryRepo"
-dir = ''
+dir = "temporaryRepo"
 
 branch = "master"
 
