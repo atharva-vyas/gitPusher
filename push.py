@@ -16,7 +16,6 @@ def gitReInit():
     if deleteGitDirectory0 == 'y':
         os.system('find "' + dir + '" -type d -name ".git" -exec rm -rf {} \;')
         os.system('git init')
-        # os.system('find "$start_directory" -type d -name ".git" -exec rm -rf {} \;')
     elif deleteGitDirectory0 == 'n':
         pass
     else:
