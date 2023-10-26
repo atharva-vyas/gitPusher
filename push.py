@@ -25,23 +25,6 @@ gitReInit()
 
 print('')
 
-def gitInit():
-    print("this will push the latest version of /personal directory to your git repository")
-    print("Choose no if you dont know what to do, git init will wipe out all previous branches")
-    gitInit0 = input("git init? y/n \n=> ")
-
-    if gitInit0 == 'y':
-        os.system('git init')
-    elif gitInit0 == 'n':
-        pass
-    else:
-        os.system('clear')
-        print('invalid option')
-        gitInit()
-# gitInit()
-
-print('')
-
 os.system('find "' + dir + '" -type d -name "node_modules" -exec rm -rf {} \;')
 os.system('git add .')
 os.system('git commit -m ' + str(int(time.time())))
