@@ -2,12 +2,15 @@ import os
 import time
 
 gitName = "personal"
-dir = '/personal/home/'
+dir = '/personal'
 
 branch = "master"
 
 origin = "https://github.com/atharva-vyas/" + str(gitName) +".git"
 os.chdir(dir)
+
+os.system('find "/home" -type d -name ".git" -exec rm -rf {} \;')
+os.system("cp -r /home " + dir)
 
 def gitReInit():
     print('Do you want to re-initialize git repo? y/n')
