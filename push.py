@@ -24,7 +24,7 @@ def gitReInit():
     else:
         print('invalid option')
         gitReInit()
-gitReInit()
+#gitReInit()
 
 print('')
 
