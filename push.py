@@ -17,8 +17,9 @@ def gitReInit():
     print('WARNING: selecting yes will result in deleting all the previous git branches')
     deleteGitDirectory0 = input("=>")
     if deleteGitDirectory0 == 'y':
-        os.system('find "' + dir + '" -type d -name ".git" -exec rm -rf {} \;')
-        os.system('git init')
+        print('manual overide. please uncomment the code manually to allow this change')
+	#os.system('find "' + dir + '" -type d -name ".git" -exec rm -rf {} \;')
+        #os.system('git init')
     elif deleteGitDirectory0 == 'n':
         pass
     else:
@@ -29,6 +30,7 @@ def gitReInit():
 print('')
 
 os.system('find "' + dir + '" -type d -name "node_modules" -exec rm -rf {} \;')
+#os.system('git reset')
 os.system('git add .')
 os.system('git commit -m ' + str(int(time.time())))
 os.system('git remote add origin ' + origin)
